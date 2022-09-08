@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { View, StyleSheet, TextInput, Button, Alert } from "react-native";
+import { MyButton } from "./UI/Buttons/MyButton";
 
 export const AddTodo = ({onSubmit}) => {
      const [ value, setValue]= useState('') 
@@ -25,7 +26,7 @@ export const AddTodo = ({onSubmit}) => {
           autoCorrect = {false}
           autoCapitalize = 'none'
           />
-          <Button title ='Добавить' onPress={pressHandrer} />
+        <MyButton title ='Добавить' onPress={pressHandrer} />
         </View>
     )
 
